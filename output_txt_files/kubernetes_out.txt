@@ -1,0 +1,18 @@
+diego@basement MINGW64 ~/DevOps_Microservices/project-ml-microservice-kubernetes (master)
+$ ./run_kubernetes.sh
+pod/udacitymlservice created
+pod/udacitymlservice condition met
+NAME               READY   STATUS    RESTARTS   AGE
+udacitymlservice   1/1     Running   0          40s
+Forwarding from 127.0.0.1:8000 -> 80
+
+diego@basement MINGW64 ~/DevOps_Microservices/project-ml-microservice-kubernetes (master)
+$ ./make_prediction.sh
+Port: 8000
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   260  100    48  100   212   1758   7767 --:--:-- --:--:-- --:--:--  9629{
+  "prediction": [
+    20.35373177134412
+  ]
+}
